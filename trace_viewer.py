@@ -1,13 +1,13 @@
 """
-Agent Flight Recorder — trace viewer.
+Agent Flight Recorder: trace viewer.
 
 Takes a recorded multi-agent run (the same shape `get_trace` returns from
 the Workato-side MCP server) and turns it into two things a human can
 actually use to debug what happened:
 
-1. A Mermaid sequence diagram — who handed off to whom, in what order,
+1. A Mermaid sequence diagram: who handed off to whom, in what order,
    and where something failed.
-2. A plain-text run summary — agents involved, failures, and how long
+2. A plain-text run summary: agents involved, failures, and how long
    each step took.
 
 This is deliberately independent of Workato: the trace format is a plain
@@ -73,7 +73,7 @@ def build_mermaid_sequence(trace: dict) -> str:
         lines.append(f"    {caller}{arrow}{callee}: {action}")
         if status == "failure":
             err = s.get("error_message", "failed")
-            lines.append(f"    Note over {callee}: FAILED — {err}")
+            lines.append(f"    Note over {callee}: FAILED: {err}")
         else:
             out = s.get("output_summary")
             if out:
@@ -134,7 +134,7 @@ def format_summary_text(summary: dict[str, Any]) -> str:
     if summary["slowest_step"]:
         slow = summary["slowest_step"]
         lines.append(
-            f"Slowest step: {slow['action']} ({slow['step_id']}) — {slow['seconds']:.1f}s"
+            f"Slowest step: {slow['action']} ({slow['step_id']}), {slow['seconds']:.1f}s"
         )
     return "\n".join(lines)
 

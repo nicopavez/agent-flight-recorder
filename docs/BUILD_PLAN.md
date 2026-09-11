@@ -1,16 +1,16 @@
 # Build Plan: the Workato side
 
-`trace_viewer.py` is done and tested — it works today, against the sample
+`trace_viewer.py` is done and tested. It works today, against the sample
 trace, independent of Workato. This is the other half: building the
 recorder itself as a Workato recipe, so real agents can write to it, and
 exposing it as an MCP server so any agent can call it.
 
 Written as a runbook because this part happens in Workato's UI, in your
-sandbox — I can't drive that from here.
+sandbox. I can't drive that from here.
 
 ## 1. Create the Data Table
 
-**Workato → Data Tables → New Table** — name it `agent_trace_steps`, with
+**Workato → Data Tables → New Table**: name it `agent_trace_steps`, with
 columns matching the trace schema `trace_viewer.py` already expects:
 
 | Column | Type |
@@ -52,7 +52,7 @@ This is the tool other agents call after each step of their work:
 Steps:
 1. Query `agent_trace_steps` where `session_id` matches, ordered by
    `started_at`.
-2. Shape the result into `{"session_id": ..., "steps": [...]}` — the
+2. Shape the result into `{"session_id": ..., "steps": [...]}`, the
    exact shape `trace_viewer.py` expects.
 3. Respond with that JSON.
 
@@ -73,16 +73,16 @@ calling LLM: *"Call record_step after completing any meaningful action.
 Call get_trace to review what happened in a past run."*
 
 Same caveat as always: this may hit a paid-plan wall in the dev sandbox.
-Screenshot whichever happens — a working MCP URL, or the upgrade prompt —
+Screenshot whichever happens (a working MCP URL, or the upgrade prompt)
 for `docs/screenshots/`.
 
 ## 5. Generate a real demo trace
 
 The sample trace is hand-written. For a stronger demo, actually run a
 small multi-agent task (two or three Claude/GPT agent calls chained
-together — even a simple script that plays "Orchestrator," "AgentA,"
+together, even a simple script that plays "Orchestrator," "AgentA,"
 "AgentB") and have each step call `record_step`. Pull the result with
-`get_trace` and run it through `trace_viewer.py` — a diagram built from a
+`get_trace` and run it through `trace_viewer.py`. A diagram built from a
 real run is a meaningfully stronger artifact than one built from fixture
 data.
 
