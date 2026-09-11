@@ -1,0 +1,61 @@
+{
+  "session_id": "demo-run-001",
+  "steps": [
+    {
+      "step_id": "s1",
+      "parent_step_id": null,
+      "agent_name": "Orchestrator",
+      "action": "receive_customer_request",
+      "input_summary": "Customer asks to upgrade their subscription and add 3 seats",
+      "output_summary": "Classified as: billing_change + provisioning_change",
+      "status": "success",
+      "started_at": "2026-09-11T14:00:00Z",
+      "ended_at": "2026-09-11T14:00:01Z"
+    },
+    {
+      "step_id": "s2",
+      "parent_step_id": "s1",
+      "agent_name": "BillingAgent",
+      "action": "apply_plan_upgrade",
+      "input_summary": "account_id=acct_5521, new_plan=pro",
+      "output_summary": "Plan upgraded, prorated invoice generated",
+      "status": "success",
+      "started_at": "2026-09-11T14:00:01Z",
+      "ended_at": "2026-09-11T14:00:03Z"
+    },
+    {
+      "step_id": "s3",
+      "parent_step_id": "s1",
+      "agent_name": "ProvisioningAgent",
+      "action": "add_seats",
+      "input_summary": "account_id=acct_5521, seats=3",
+      "output_summary": null,
+      "status": "failure",
+      "error_message": "Downstream identity-provisioning API timed out after 30s",
+      "started_at": "2026-09-11T14:00:03Z",
+      "ended_at": "2026-09-11T14:00:33Z"
+    },
+    {
+      "step_id": "s4",
+      "parent_step_id": "s3",
+      "agent_name": "ProvisioningAgent",
+      "action": "retry_add_seats",
+      "input_summary": "account_id=acct_5521, seats=3 (retry 1)",
+      "output_summary": "3 seats provisioned",
+      "status": "success",
+      "started_at": "2026-09-11T14:00:33Z",
+      "ended_at": "2026-09-11T14:00:35Z"
+    },
+    {
+      "step_id": "s5",
+      "parent_step_id": "s1",
+      "agent_name": "Orchestrator",
+      "action": "notify_customer",
+      "input_summary": "billing: success, provisioning: success (after 1 retry)",
+      "output_summary": "Confirmation email sent",
+      "status": "success",
+      "started_at": "2026-09-11T14:00:35Z",
+      "ended_at": "2026-09-11T14:00:36Z"
+    }
+  ]
+}
