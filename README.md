@@ -96,7 +96,7 @@ reasonable v2 (see Roadmap), but the source of truth stays rule-based.
 - [x] Trace schema defined (`sample_data/sample_trace.json`)
 - [x] `trace_viewer.py`: builds a Mermaid sequence diagram + run summary,
       7 passing unit tests
-- [ ] Data Table + `record_step`/`get_trace` recipes built in Workato
+- [x] Data Table + `record_step`/`get_trace` recipes built in Workato
 - [ ] Exposed via AI Hub → Enterprise MCP
 - [ ] Fed a real (not hand-written) multi-agent trace
 - [ ] Screenshots / demo added to `docs/`
