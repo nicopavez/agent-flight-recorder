@@ -73,6 +73,19 @@ side, turning a trace into something a human can actually use, is
 [`trace_viewer.py`](trace_viewer.py), which works standalone against
 any trace matching the schema, Workato or not.
 
+## Auth model — and its honest limit
+
+The MCP server is gated by a scoped token: that answers *who's allowed to
+call these tools at all*. It doesn't answer *which agent is calling* —
+`record_step` trusts whatever `agent_name` the caller sends. That's a
+real gap, not papered over:
+
+| | |
+|---|---|
+| **Verified today** | server access, via a scoped MCP token |
+| **Gap** | agent identity — `agent_name` is self-reported, not authenticated |
+| **v2** | one scoped, revocable credential per agent, so identity is checked, not just claimed |
+
 ## Why rule-based, not an LLM summarizing the trace
 
 It would be easy to pipe the recorded steps through an LLM and ask for a
