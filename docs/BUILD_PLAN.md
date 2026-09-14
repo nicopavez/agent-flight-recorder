@@ -47,16 +47,16 @@ This is the tool other agents call after each step of their work:
 
 **Known issue on the trial plan:** don't wrap `step_id` (or any field) in
 a conditional formula (`if()`/ternary) that also references a data pill
-in this action's field editor — e.g. `if(step_id.blank?, SecureRandom.uuid,
+in this action's field editor: e.g. `if(step_id.blank?, SecureRandom.uuid,
 step_id)` reliably fails the recipe's "Formula has errors" check on
 Start, regardless of what's inside the branches (tested with
 `SecureRandom.uuid`, `Time.now.strftime(...)`, and a plain string
-literal — all three failed once combined with `if()` + a pill; all three
-work individually with no pill, and a bare pill with no formula also
+literal; all three failed once combined with `if()` + a pill, and all
+three work individually with no pill, and a bare pill with no formula also
 works). Root cause not identified beyond "this Workato trial workspace's
 Data Table connector rejects conditional-formula + pill combos in New
 record fields." Current workaround: `step_id` is a plain pill (Text
-mode, no formula) mapped straight from the request's `Step ID` — if the
+mode, no formula) mapped straight from the request's `Step ID`. If the
 caller doesn't supply one, it's just left blank rather than
 auto-generated.
 
@@ -114,11 +114,11 @@ wk clone "hello-world" --local-path recipe --no-input
 ```
 
 `region trial` (Developer Sandbox) is the key flag the old CLI never
-had — that's what actually lets it authenticate here. The token needs a
+had; that's what actually lets it authenticate here. The token needs a
 Client Role with, at minimum: Projects & folders, Resources, Recipes,
-**Export manifests** (under Recipe lifecycle management — this is the
+**Export manifests** (under Recipe lifecycle management, this is the
 one that's easy to miss and the clone will 401 without it), and
-Workspace details (under Admin — needed for the `/users/me` check
+Workspace details (under Admin, needed for the `/users/me` check
 `wk auth login` does up front). Build these in **Workspace admin → API
 clients → Client roles**.
 
