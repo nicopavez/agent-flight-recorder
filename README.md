@@ -6,10 +6,10 @@
 [![License](https://img.shields.io/badge/license-MIT-lightgrey)](LICENSE)
 [![Status](https://img.shields.io/badge/status-v1-brightgreen)](#whats-working-today)
 
-A black-box flight recorder for multi-agent AI systems. When one agent
-hands work to another, this records who did what, when, and whether it
-worked. When something breaks in production, there's a real trace to
-look at instead of a shrug.
+An audit trail for multi-agent AI systems. When one agent hands work to
+another, this records who did what, when, and whether it worked. When
+something breaks in production, there's a real trace to look at instead
+of a shrug.
 
 ```
 python trace_viewer.py sample_data/sample_trace.json
@@ -78,7 +78,7 @@ any trace matching the schema, Workato or not.
 It would be easy to pipe the recorded steps through an LLM and ask for a
 narrative summary instead. This intentionally doesn't:
 
-- A flight recorder that itself hallucinates defeats the point. The one
+- An audit trail that itself hallucinates defeats the point. The one
   property this needs is that it says exactly what was logged, nothing
   invented.
 - It has to work with zero added cost or latency on the debugging path,
