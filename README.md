@@ -100,8 +100,24 @@ reasonable v2 (see Roadmap), but the source of truth stays rule-based.
       both live
 - [x] Exposed via Enterprise MCP (`agent-flight-recorder` server, both
       tools active, see `docs/screenshots/mcp_server_active.jpg`)
-- [ ] Fed a real (not hand-written) multi-agent trace
-- [ ] Screenshots / demo added to `docs/`
+- [x] Fed a real (not hand-written) multi-agent trace: a 3-agent,
+      5-step run (with a failure + retry) recorded live through the
+      Enterprise MCP server and pulled back with `get_trace`
+      (`sample_data/live_demo_trace.json`)
+- [x] Screenshots / demo added to `docs/screenshots/`
+
+## Live demo
+
+A real run, not a fixture, recorded through the live `record_step` MCP
+tool and read back with `get_trace`: `Orchestrator` delegates research,
+`ResearchAgent` hits a rate limit and retries, `WriterAgent` drafts a
+summary, `Orchestrator` delivers it.
+
+```
+python trace_viewer.py sample_data/live_demo_trace.json
+```
+
+![sequence diagram of the live demo trace](docs/screenshots/live_demo_trace_diagram.jpg)
 
 ## Try it
 

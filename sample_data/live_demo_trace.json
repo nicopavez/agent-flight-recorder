@@ -1,0 +1,70 @@
+{
+  "session_id": "live-demo-20260914",
+  "steps": [
+    {
+      "session_id": "live-demo-20260914",
+      "step_id": "s1",
+      "parent_step_id": "",
+      "agent_name": "Orchestrator",
+      "action": "receive_task",
+      "input_summary": "Write and fact-check a market summary for Q3 2026 SaaS trends",
+      "output_summary": "Delegated: research to ResearchAgent, writing to WriterAgent",
+      "status": "success",
+      "error_message": "",
+      "started_at": "2026-09-14T09:15:00.000+00:00",
+      "ended_at": "2026-09-14T09:15:01.000+00:00"
+    },
+    {
+      "session_id": "live-demo-20260914",
+      "step_id": "s2",
+      "parent_step_id": "s1",
+      "agent_name": "ResearchAgent",
+      "action": "gather_market_data",
+      "input_summary": "topic=Q3 2026 SaaS trends, sources=3",
+      "output_summary": "",
+      "status": "failure",
+      "error_message": "Market data API rate-limited (HTTP 429)",
+      "started_at": "2026-09-14T09:15:01.000+00:00",
+      "ended_at": "2026-09-14T09:15:11.000+00:00"
+    },
+    {
+      "session_id": "live-demo-20260914",
+      "step_id": "s3",
+      "parent_step_id": "s2",
+      "agent_name": "ResearchAgent",
+      "action": "retry_gather_market_data",
+      "input_summary": "topic=Q3 2026 SaaS trends, sources=3 (retry 1)",
+      "output_summary": "12 data points collected across 3 sources",
+      "status": "success",
+      "error_message": "",
+      "started_at": "2026-09-14T09:15:11.000+00:00",
+      "ended_at": "2026-09-14T09:15:14.000+00:00"
+    },
+    {
+      "session_id": "live-demo-20260914",
+      "step_id": "s4",
+      "parent_step_id": "s3",
+      "agent_name": "WriterAgent",
+      "action": "draft_summary",
+      "input_summary": "12 data points on Q3 2026 SaaS trends",
+      "output_summary": "320-word draft produced, 3 key trends highlighted",
+      "status": "success",
+      "error_message": "",
+      "started_at": "2026-09-14T09:15:14.000+00:00",
+      "ended_at": "2026-09-14T09:15:19.000+00:00"
+    },
+    {
+      "session_id": "live-demo-20260914",
+      "step_id": "s5",
+      "parent_step_id": "s4",
+      "agent_name": "Orchestrator",
+      "action": "deliver_summary",
+      "input_summary": "draft ready from WriterAgent",
+      "output_summary": "Summary delivered to user",
+      "status": "success",
+      "error_message": "",
+      "started_at": "2026-09-14T09:15:19.000+00:00",
+      "ended_at": "2026-09-14T09:15:20.000+00:00"
+    }
+  ]
+}
