@@ -4,3 +4,6 @@
 __pycache__/
 *.pyc
 .pytest_cache/
+
+# Personal, never for the public repo
+interview_script.md
