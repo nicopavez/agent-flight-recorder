@@ -31,10 +31,12 @@ including exactly where and why it failed.
 
 Three data points behind this:
 
-- A widely-cited academic failure study (MAST) found **~79% of
-  multi-agent failures** trace back to unclear task specs (42%) and
-  agent-to-agent **coordination breakdowns** (37%): agents
-  misunderstanding what another agent needed or expected.
+- ["Why Do Multi-Agent LLM Systems Fail?"](https://arxiv.org/abs/2503.13657)
+  (Cemri, Pan, Yang, et al.), which introduces the **MAST** (Multi-Agent
+  System Failure Taxonomy), found **~79% of multi-agent failures** trace
+  back to unclear task specs (42%) and agent-to-agent **coordination
+  breakdowns** (37%): agents misunderstanding what another agent needed
+  or expected.
 - **72% of enterprise AI projects now use multi-agent architectures**
   (up from 23% in 2024), but observability is the *weakest*-rated part
   of the stack. Only 33% of teams are satisfied with it, and most
