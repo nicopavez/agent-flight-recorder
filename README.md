@@ -121,10 +121,10 @@ reasonable v2 (see Roadmap), but the source of truth stays rule-based.
 
 ## Live demo
 
-A real run, not a fixture, recorded through the live `record_step` MCP
-tool and read back with `get_trace`: `Orchestrator` delegates research,
-`ResearchAgent` hits a rate limit and retries, `WriterAgent` drafts a
-summary, `Orchestrator` delivers it.
+A real run, not hand-written sample data, recorded through the live
+`record_step` MCP tool and read back with `get_trace`: `Orchestrator`
+delegates research, `ResearchAgent` hits a rate limit and retries,
+`WriterAgent` drafts a summary, `Orchestrator` delivers it.
 
 ```
 python trace_viewer.py sample_data/live_demo_trace.json
@@ -146,7 +146,7 @@ reading/analysis side, fully working standalone.
 
 **v1 (this repo, today)**: the recording side live in Workato: Data
 Table, `record_step` / `get_trace` recipes, exposed via Enterprise MCP;
-fed a real multi-agent run instead of fixture data.
+fed a real multi-agent run instead of hand-written sample data.
 
 **v2**: an optional LLM-narrated summary layered on top of the
 deterministic trace (see "Why rule-based" above); anomaly flagging
