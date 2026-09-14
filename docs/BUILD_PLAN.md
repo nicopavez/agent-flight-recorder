@@ -45,6 +45,21 @@ Steps:
 This is the tool other agents call after each step of their work:
 *"log that I just did X, here's what happened."*
 
+**Known issue on the trial plan:** don't wrap `step_id` (or any field) in
+a conditional formula (`if()`/ternary) that also references a data pill
+in this action's field editor — e.g. `if(step_id.blank?, SecureRandom.uuid,
+step_id)` reliably fails the recipe's "Formula has errors" check on
+Start, regardless of what's inside the branches (tested with
+`SecureRandom.uuid`, `Time.now.strftime(...)`, and a plain string
+literal — all three failed once combined with `if()` + a pill; all three
+work individually with no pill, and a bare pill with no formula also
+works). Root cause not identified beyond "this Workato trial workspace's
+Data Table connector rejects conditional-formula + pill combos in New
+record fields." Current workaround: `step_id` is a plain pill (Text
+mode, no formula) mapped straight from the request's `Step ID` — if the
+caller doesn't supply one, it's just left blank rather than
+auto-generated.
+
 ## 3. Build the `get_trace` recipe
 
 **New recipe → API Platform trigger**, input: `session_id`.

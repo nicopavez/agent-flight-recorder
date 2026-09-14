@@ -96,8 +96,10 @@ reasonable v2 (see Roadmap), but the source of truth stays rule-based.
 - [x] Trace schema defined (`sample_data/sample_trace.json`)
 - [x] `trace_viewer.py`: builds a Mermaid sequence diagram + run summary,
       7 passing unit tests
-- [x] Data Table + `record_step`/`get_trace` recipes built in Workato
-- [ ] Exposed via AI Hub → Enterprise MCP
+- [x] Data Table + `record_step`/`get_trace` recipes built in Workato,
+      both live
+- [x] Exposed via Enterprise MCP (`agent-flight-recorder` server, both
+      tools active, see `docs/screenshots/mcp_server_active.jpg`)
 - [ ] Fed a real (not hand-written) multi-agent trace
 - [ ] Screenshots / demo added to `docs/`
 
