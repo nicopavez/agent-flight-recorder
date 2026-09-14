@@ -1,0 +1,816 @@
+{
+  "code": {
+    "as": "f2fe217a",
+    "block": [
+      {
+        "as": "c5091a31",
+        "dynamicPickListSelection": {
+          "filters.0.field_id": "session_id",
+          "order_by_field_id": "started_at",
+          "table_id": "agent_trace_steps"
+        },
+        "extended_input_schema": [
+          {
+            "control_type": "text",
+            "default": "string",
+            "label": "$internal_value_a05ddce6-ef3a-4947-a9a0-e014653872e0",
+            "name": "a05ddce6-ef3a-4947-a9a0-e014653872e0",
+            "ngIf": "false",
+            "optional": true,
+            "type": "string"
+          },
+          {
+            "control_type": "text",
+            "default": "string",
+            "label": "$internal_value_24f90a9a-e584-4139-ab74-2d3fa484c377",
+            "name": "24f90a9a-e584-4139-ab74-2d3fa484c377",
+            "ngIf": "false",
+            "optional": true,
+            "type": "string"
+          },
+          {
+            "control_type": "text",
+            "default": "string",
+            "label": "$internal_value_586765a5-e0e1-416a-8688-07e18f3f320f",
+            "name": "586765a5-e0e1-416a-8688-07e18f3f320f",
+            "ngIf": "false",
+            "optional": true,
+            "type": "string"
+          },
+          {
+            "control_type": "text",
+            "default": "string",
+            "label": "$internal_value_95b25665-3989-434f-96e7-02df208dfcfb",
+            "name": "95b25665-3989-434f-96e7-02df208dfcfb",
+            "ngIf": "false",
+            "optional": true,
+            "type": "string"
+          },
+          {
+            "control_type": "text",
+            "default": "string",
+            "label": "$internal_value_0944b07d-194f-41a9-9d93-d7a6b0015ff8",
+            "name": "0944b07d-194f-41a9-9d93-d7a6b0015ff8",
+            "ngIf": "false",
+            "optional": true,
+            "type": "string"
+          },
+          {
+            "control_type": "text",
+            "default": "string",
+            "label": "$internal_value_57207f77-e73d-4e38-ba8e-c6d40922eec6",
+            "name": "57207f77-e73d-4e38-ba8e-c6d40922eec6",
+            "ngIf": "false",
+            "optional": true,
+            "type": "string"
+          },
+          {
+            "control_type": "text",
+            "default": "string",
+            "label": "$internal_value_92116d4f-6c8a-4e72-8494-cd2a52b5f38d",
+            "name": "92116d4f-6c8a-4e72-8494-cd2a52b5f38d",
+            "ngIf": "false",
+            "optional": true,
+            "type": "string"
+          },
+          {
+            "control_type": "text",
+            "default": "string",
+            "label": "$internal_value_4395f0b8-2300-434d-a795-81910debb4b9",
+            "name": "4395f0b8-2300-434d-a795-81910debb4b9",
+            "ngIf": "false",
+            "optional": true,
+            "type": "string"
+          },
+          {
+            "control_type": "text",
+            "default": "string",
+            "label": "$internal_value_ae58752b-2bef-4ca4-9b0d-d6cbb2bccbf7",
+            "name": "ae58752b-2bef-4ca4-9b0d-d6cbb2bccbf7",
+            "ngIf": "false",
+            "optional": true,
+            "type": "string"
+          },
+          {
+            "control_type": "text",
+            "default": "string",
+            "label": "$internal_value_7ada7b89-600a-4539-bf76-b987e94b31c2",
+            "name": "7ada7b89-600a-4539-bf76-b987e94b31c2",
+            "ngIf": "false",
+            "optional": true,
+            "type": "string"
+          },
+          {
+            "control_type": "text",
+            "default": "string",
+            "label": "$internal_value_e826deea-25c8-40d6-a32b-f07e320cd37d",
+            "name": "e826deea-25c8-40d6-a32b-f07e320cd37d",
+            "ngIf": "false",
+            "optional": true,
+            "type": "string"
+          },
+          {
+            "control_type": "text",
+            "default": "id",
+            "label": "$internal_value_11fbe9a6-a16d-4d7e-86ea-afe42ec03005",
+            "name": "11fbe9a6-a16d-4d7e-86ea-afe42ec03005",
+            "ngIf": "false",
+            "optional": true,
+            "type": "string"
+          },
+          {
+            "control_type": "text",
+            "default": "date_time",
+            "label": "$internal_value_a5612739-5401-4ae7-bd07-782c1a6fb2d1",
+            "name": "a5612739-5401-4ae7-bd07-782c1a6fb2d1",
+            "ngIf": "false",
+            "optional": true,
+            "type": "string"
+          },
+          {
+            "control_type": "text",
+            "default": "date_time",
+            "label": "$internal_value_61aae604-a95e-4519-9091-bb0bf754a67f",
+            "name": "61aae604-a95e-4519-9091-bb0bf754a67f",
+            "ngIf": "false",
+            "optional": true,
+            "type": "string"
+          }
+        ],
+        "extended_output_schema": [
+          {
+            "label": "Records",
+            "name": "records",
+            "of": "object",
+            "properties": [
+              {
+                "control_type": "text",
+                "label": "Record ID",
+                "name": "11fbe9a6_a16d_4d7e_86ea_afe42ec03005",
+                "type": "string"
+              },
+              {
+                "control_type": "text",
+                "label": "session_id",
+                "name": "a05ddce6_ef3a_4947_a9a0_e014653872e0",
+                "type": "string"
+              },
+              {
+                "control_type": "text",
+                "label": "step_id",
+                "name": "24f90a9a_e584_4139_ab74_2d3fa484c377",
+                "type": "string"
+              },
+              {
+                "control_type": "text",
+                "label": "parent_step_id",
+                "name": "586765a5_e0e1_416a_8688_07e18f3f320f",
+                "type": "string"
+              },
+              {
+                "control_type": "text",
+                "label": "agent_name",
+                "name": "95b25665_3989_434f_96e7_02df208dfcfb",
+                "type": "string"
+              },
+              {
+                "control_type": "text",
+                "label": "action",
+                "name": "0944b07d_194f_41a9_9d93_d7a6b0015ff8",
+                "type": "string"
+              },
+              {
+                "control_type": "text",
+                "label": "input_summary",
+                "name": "57207f77_e73d_4e38_ba8e_c6d40922eec6",
+                "type": "string"
+              },
+              {
+                "control_type": "text",
+                "label": "output_summary",
+                "name": "92116d4f_6c8a_4e72_8494_cd2a52b5f38d",
+                "type": "string"
+              },
+              {
+                "control_type": "text",
+                "label": "status",
+                "name": "4395f0b8_2300_434d_a795_81910debb4b9",
+                "type": "string"
+              },
+              {
+                "control_type": "text",
+                "label": "error_message",
+                "name": "ae58752b_2bef_4ca4_9b0d_d6cbb2bccbf7",
+                "type": "string"
+              },
+              {
+                "control_type": "text",
+                "label": "started_at",
+                "name": "7ada7b89_600a_4539_bf76_b987e94b31c2",
+                "type": "string"
+              },
+              {
+                "control_type": "text",
+                "label": "ended_at",
+                "name": "e826deea_25c8_40d6_a32b_f07e320cd37d",
+                "type": "string"
+              },
+              {
+                "control_type": "date_time",
+                "label": "Created at",
+                "name": "a5612739_5401_4ae7_bd07_782c1a6fb2d1",
+                "parse_output": "date_time_conversion",
+                "render_input": "date_time_conversion",
+                "type": "date_time"
+              },
+              {
+                "control_type": "date_time",
+                "label": "Updated at",
+                "name": "61aae604_a95e_4519_9091_bb0bf754a67f",
+                "parse_output": "date_time_conversion",
+                "render_input": "date_time_conversion",
+                "type": "date_time"
+              }
+            ],
+            "type": "array"
+          },
+          {
+            "control_type": "text",
+            "label": "Next Page Token",
+            "name": "continuation_token",
+            "type": "string"
+          }
+        ],
+        "input": {
+          "0944b07d-194f-41a9-9d93-d7a6b0015ff8": "string",
+          "11fbe9a6-a16d-4d7e-86ea-afe42ec03005": "id",
+          "24f90a9a-e584-4139-ab74-2d3fa484c377": "string",
+          "4395f0b8-2300-434d-a795-81910debb4b9": "string",
+          "57207f77-e73d-4e38-ba8e-c6d40922eec6": "string",
+          "586765a5-e0e1-416a-8688-07e18f3f320f": "string",
+          "61aae604-a95e-4519-9091-bb0bf754a67f": "date_time",
+          "7ada7b89-600a-4539-bf76-b987e94b31c2": "string",
+          "92116d4f-6c8a-4e72-8494-cd2a52b5f38d": "string",
+          "95b25665-3989-434f-96e7-02df208dfcfb": "string",
+          "a05ddce6-ef3a-4947-a9a0-e014653872e0": "string",
+          "a5612739-5401-4ae7-bd07-782c1a6fb2d1": "date_time",
+          "ae58752b-2bef-4ca4-9b0d-d6cbb2bccbf7": "string",
+          "e826deea-25c8-40d6-a32b-f07e320cd37d": "string",
+          "filters": [
+            {
+              "field_id": "a05ddce6-ef3a-4947-a9a0-e014653872e0",
+              "op_default": "eq",
+              "value_default": "#{_dp('{\"pill_type\":\"output\",\"provider\":\"workato_api_platform\",\"line\":\"f2fe217a\",\"path\":[\"request\",\"session_id\"]}')}"
+            }
+          ],
+          "limit": "100",
+          "order_by_field_id": "7ada7b89-600a-4539-bf76-b987e94b31c2",
+          "order_direction": "asc",
+          "table_id": {
+            "folder": "",
+            "name": "agent_trace_steps",
+            "zip_name": "agent_trace_steps.workato_db_table.json"
+          }
+        },
+        "keyword": "action",
+        "name": "get_records",
+        "number": 1,
+        "provider": "workato_db_table",
+        "uuid": "b89a5b61-75bb-42cd-b718-54c4c76cdb9b"
+      },
+      {
+        "as": "96176300",
+        "extended_input_schema": [
+          {
+            "change_on_blur": true,
+            "control_type": "select",
+            "extends_schema": true,
+            "label": "Response",
+            "name": "http_status_code",
+            "pick_list": [
+              [
+                "success",
+                "200"
+              ]
+            ],
+            "type": "string"
+          },
+          {
+            "label": "Response body",
+            "name": "response",
+            "properties": [
+              {
+                "control_type": "text",
+                "label": "Session ID",
+                "name": "session_id",
+                "optional": true,
+                "type": "string"
+              },
+              {
+                "label": "Steps",
+                "name": "steps",
+                "of": "object",
+                "optional": true,
+                "properties": [
+                  {
+                    "control_type": "text",
+                    "label": "Session ID",
+                    "name": "session_id",
+                    "optional": true,
+                    "type": "string"
+                  },
+                  {
+                    "control_type": "text",
+                    "label": "Step ID",
+                    "name": "step_id",
+                    "optional": true,
+                    "type": "string"
+                  },
+                  {
+                    "control_type": "text",
+                    "label": "Parent step ID",
+                    "name": "parent_step_id",
+                    "optional": true,
+                    "type": "string"
+                  },
+                  {
+                    "control_type": "text",
+                    "label": "Agent name",
+                    "name": "agent_name",
+                    "optional": true,
+                    "type": "string"
+                  },
+                  {
+                    "control_type": "text",
+                    "label": "Action",
+                    "name": "action",
+                    "optional": true,
+                    "type": "string"
+                  },
+                  {
+                    "control_type": "text",
+                    "label": "Input summary",
+                    "name": "input_summary",
+                    "optional": true,
+                    "type": "string"
+                  },
+                  {
+                    "control_type": "text",
+                    "label": "Output summary",
+                    "name": "output_summary",
+                    "optional": true,
+                    "type": "string"
+                  },
+                  {
+                    "control_type": "text",
+                    "label": "Status",
+                    "name": "status",
+                    "optional": true,
+                    "type": "string"
+                  },
+                  {
+                    "control_type": "text",
+                    "label": "Error message",
+                    "name": "error_message",
+                    "optional": true,
+                    "type": "string"
+                  },
+                  {
+                    "control_type": "date_time",
+                    "label": "Started at",
+                    "name": "started_at",
+                    "optional": true,
+                    "parse_output": "date_time_conversion",
+                    "render_input": "date_time_conversion",
+                    "type": "date_time"
+                  },
+                  {
+                    "control_type": "date_time",
+                    "label": "Ended at",
+                    "name": "ended_at",
+                    "optional": true,
+                    "parse_output": "date_time_conversion",
+                    "render_input": "date_time_conversion",
+                    "type": "date_time"
+                  }
+                ],
+                "type": "array"
+              }
+            ],
+            "type": "object"
+          }
+        ],
+        "extended_output_schema": [
+          {
+            "change_on_blur": true,
+            "control_type": "select",
+            "extends_schema": true,
+            "label": "Response",
+            "name": "http_status_code",
+            "pick_list": [
+              [
+                "success",
+                "200"
+              ]
+            ],
+            "type": "string"
+          },
+          {
+            "label": "Response body",
+            "name": "response",
+            "properties": [
+              {
+                "control_type": "text",
+                "label": "Session ID",
+                "name": "session_id",
+                "optional": true,
+                "type": "string"
+              },
+              {
+                "label": "Steps",
+                "name": "steps",
+                "of": "object",
+                "optional": true,
+                "properties": [
+                  {
+                    "control_type": "text",
+                    "label": "Session ID",
+                    "name": "session_id",
+                    "optional": true,
+                    "type": "string"
+                  },
+                  {
+                    "control_type": "text",
+                    "label": "Step ID",
+                    "name": "step_id",
+                    "optional": true,
+                    "type": "string"
+                  },
+                  {
+                    "control_type": "text",
+                    "label": "Parent step ID",
+                    "name": "parent_step_id",
+                    "optional": true,
+                    "type": "string"
+                  },
+                  {
+                    "control_type": "text",
+                    "label": "Agent name",
+                    "name": "agent_name",
+                    "optional": true,
+                    "type": "string"
+                  },
+                  {
+                    "control_type": "text",
+                    "label": "Action",
+                    "name": "action",
+                    "optional": true,
+                    "type": "string"
+                  },
+                  {
+                    "control_type": "text",
+                    "label": "Input summary",
+                    "name": "input_summary",
+                    "optional": true,
+                    "type": "string"
+                  },
+                  {
+                    "control_type": "text",
+                    "label": "Output summary",
+                    "name": "output_summary",
+                    "optional": true,
+                    "type": "string"
+                  },
+                  {
+                    "control_type": "text",
+                    "label": "Status",
+                    "name": "status",
+                    "optional": true,
+                    "type": "string"
+                  },
+                  {
+                    "control_type": "text",
+                    "label": "Error message",
+                    "name": "error_message",
+                    "optional": true,
+                    "type": "string"
+                  },
+                  {
+                    "control_type": "date_time",
+                    "label": "Started at",
+                    "name": "started_at",
+                    "optional": true,
+                    "parse_output": "date_time_conversion",
+                    "render_input": "date_time_conversion",
+                    "type": "date_time"
+                  },
+                  {
+                    "control_type": "date_time",
+                    "label": "Ended at",
+                    "name": "ended_at",
+                    "optional": true,
+                    "parse_output": "date_time_conversion",
+                    "render_input": "date_time_conversion",
+                    "type": "date_time"
+                  }
+                ],
+                "type": "array"
+              }
+            ],
+            "type": "object"
+          }
+        ],
+        "input": {
+          "http_status_code": "200",
+          "response": {
+            "session_id": "#{_dp('{\"pill_type\":\"output\",\"provider\":\"workato_api_platform\",\"line\":\"f2fe217a\",\"path\":[\"request\",\"session_id\"]}')}",
+            "steps": {
+              "____source": "#{_dp('{\"pill_type\":\"output\",\"provider\":\"workato_db_table\",\"line\":\"c5091a31\",\"path\":[\"records\"]}')}",
+              "action": "#{_dp('{\"pill_type\":\"output\",\"provider\":\"workato_db_table\",\"line\":\"c5091a31\",\"path\":[\"records\",{\"path_element_type\":\"current_item\"},\"0944b07d_194f_41a9_9d93_d7a6b0015ff8\"]}')}",
+              "agent_name": "#{_dp('{\"pill_type\":\"output\",\"provider\":\"workato_db_table\",\"line\":\"c5091a31\",\"path\":[\"records\",{\"path_element_type\":\"current_item\"},\"95b25665_3989_434f_96e7_02df208dfcfb\"]}')}",
+              "ended_at": "#{_dp('{\"pill_type\":\"output\",\"provider\":\"workato_db_table\",\"line\":\"c5091a31\",\"path\":[\"records\",{\"path_element_type\":\"current_item\"},\"e826deea_25c8_40d6_a32b_f07e320cd37d\"]}')}",
+              "error_message": "#{_dp('{\"pill_type\":\"output\",\"provider\":\"workato_db_table\",\"line\":\"c5091a31\",\"path\":[\"records\",{\"path_element_type\":\"current_item\"},\"ae58752b_2bef_4ca4_9b0d_d6cbb2bccbf7\"]}')}",
+              "input_summary": "#{_dp('{\"pill_type\":\"output\",\"provider\":\"workato_db_table\",\"line\":\"c5091a31\",\"path\":[\"records\",{\"path_element_type\":\"current_item\"},\"57207f77_e73d_4e38_ba8e_c6d40922eec6\"]}')}",
+              "output_summary": "#{_dp('{\"pill_type\":\"output\",\"provider\":\"workato_db_table\",\"line\":\"c5091a31\",\"path\":[\"records\",{\"path_element_type\":\"current_item\"},\"92116d4f_6c8a_4e72_8494_cd2a52b5f38d\"]}')}",
+              "parent_step_id": "#{_dp('{\"pill_type\":\"output\",\"provider\":\"workato_db_table\",\"line\":\"c5091a31\",\"path\":[\"records\",{\"path_element_type\":\"current_item\"},\"586765a5_e0e1_416a_8688_07e18f3f320f\"]}')}",
+              "session_id": "#{_dp('{\"pill_type\":\"output\",\"provider\":\"workato_db_table\",\"line\":\"c5091a31\",\"path\":[\"records\",{\"path_element_type\":\"current_item\"},\"a05ddce6_ef3a_4947_a9a0_e014653872e0\"]}')}",
+              "started_at": "#{_dp('{\"pill_type\":\"output\",\"provider\":\"workato_db_table\",\"line\":\"c5091a31\",\"path\":[\"records\",{\"path_element_type\":\"current_item\"},\"7ada7b89_600a_4539_bf76_b987e94b31c2\"]}')}",
+              "status": "#{_dp('{\"pill_type\":\"output\",\"provider\":\"workato_db_table\",\"line\":\"c5091a31\",\"path\":[\"records\",{\"path_element_type\":\"current_item\"},\"4395f0b8_2300_434d_a795_81910debb4b9\"]}')}",
+              "step_id": "#{_dp('{\"pill_type\":\"output\",\"provider\":\"workato_db_table\",\"line\":\"c5091a31\",\"path\":[\"records\",{\"path_element_type\":\"current_item\"},\"24f90a9a_e584_4139_ab74_2d3fa484c377\"]}')}"
+            }
+          }
+        },
+        "keyword": "action",
+        "name": "return_response",
+        "number": 2,
+        "provider": "workato_api_platform",
+        "uuid": "bf153cb4-77d4-45ad-aa0d-1c194b9c363a",
+        "visible_config_fields": [
+          "http_status_code",
+          "response.session_id",
+          "response.steps.session_id",
+          "response.steps.step_id",
+          "response.steps.parent_step_id",
+          "response.steps.agent_name",
+          "response.steps.action",
+          "response.steps.input_summary",
+          "response.steps.output_summary",
+          "response.steps.status",
+          "response.steps.error_message",
+          "response.steps.started_at",
+          "response.steps.ended_at"
+        ]
+      }
+    ],
+    "comment": "Define the request and response parameters for this API endpoint",
+    "dynamicPickListSelection": {
+      "response.responses.0.http_status_code": "200 - OK"
+    },
+    "extended_output_schema": [
+      {
+        "label": "Context",
+        "name": "context",
+        "properties": [
+          {
+            "control_type": "text",
+            "label": "Calling IP address",
+            "name": "calling_ip",
+            "optional": true,
+            "type": "string"
+          },
+          {
+            "label": "Access profile",
+            "name": "access_profile",
+            "properties": [
+              {
+                "control_type": "integer",
+                "label": "Access profile ID",
+                "name": "id",
+                "optional": true,
+                "parse_output": "integer_conversion",
+                "type": "integer"
+              },
+              {
+                "control_type": "text",
+                "label": "Access profile name",
+                "name": "name",
+                "optional": true,
+                "type": "string"
+              },
+              {
+                "control_type": "text",
+                "label": "Access profile authentication type",
+                "name": "type",
+                "optional": true,
+                "type": "string"
+              }
+            ],
+            "type": "object"
+          },
+          {
+            "label": "API client",
+            "name": "client",
+            "properties": [
+              {
+                "control_type": "text",
+                "label": "API client ID",
+                "name": "id",
+                "optional": true,
+                "type": "string"
+              },
+              {
+                "control_type": "text",
+                "label": "API client name",
+                "name": "name",
+                "optional": true,
+                "type": "string"
+              }
+            ],
+            "type": "object"
+          },
+          {
+            "label": "JWT claims",
+            "name": "jwt_payload",
+            "properties": [
+              {
+                "control_type": "integer",
+                "label": "Issued At",
+                "name": "iat",
+                "optional": true,
+                "parse_output": "date_time_conversion",
+                "render_input": "date_time_conversion",
+                "type": "date_time"
+              },
+              {
+                "control_type": "integer",
+                "label": "Not Before",
+                "name": "nbf",
+                "optional": true,
+                "parse_output": "date_time_conversion",
+                "render_input": "date_time_conversion",
+                "type": "date_time"
+              },
+              {
+                "control_type": "integer",
+                "label": "Expiration Time",
+                "name": "exp",
+                "optional": true,
+                "parse_output": "date_time_conversion",
+                "render_input": "date_time_conversion",
+                "type": "date_time"
+              },
+              {
+                "control_type": "text",
+                "label": "Audience",
+                "name": "aud",
+                "optional": true,
+                "type": "string"
+              },
+              {
+                "control_type": "text",
+                "label": "JWT ID",
+                "name": "jti",
+                "optional": true,
+                "type": "string"
+              },
+              {
+                "control_type": "text",
+                "label": "Issuer",
+                "name": "iss",
+                "optional": true,
+                "type": "string"
+              }
+            ],
+            "type": "object"
+          },
+          {
+            "label": "Token introspection",
+            "name": "introspect",
+            "properties": [
+              {
+                "label": "Response Body",
+                "name": "payload",
+                "properties": [
+                  {
+                    "control_type": "checkbox",
+                    "label": "Active",
+                    "name": "active",
+                    "optional": true,
+                    "parse_output": "boolean_conversion",
+                    "render_input": "boolean_conversion",
+                    "toggle_field": {
+                      "control_type": "text",
+                      "label": "Active",
+                      "name": "active",
+                      "optional": true,
+                      "toggle_hint": "Use custom value",
+                      "type": "boolean"
+                    },
+                    "toggle_hint": "Select from option list",
+                    "type": "boolean"
+                  },
+                  {
+                    "control_type": "text",
+                    "label": "Scope",
+                    "name": "scope",
+                    "optional": true,
+                    "type": "string"
+                  },
+                  {
+                    "control_type": "text",
+                    "label": "Client ID",
+                    "name": "client_id",
+                    "optional": true,
+                    "type": "string"
+                  },
+                  {
+                    "control_type": "text",
+                    "label": "Username",
+                    "name": "username",
+                    "optional": true,
+                    "type": "string"
+                  },
+                  {
+                    "control_type": "text",
+                    "label": "Token type",
+                    "name": "token_type",
+                    "optional": true,
+                    "type": "string"
+                  },
+                  {
+                    "control_type": "text",
+                    "label": "Exp",
+                    "name": "exp",
+                    "optional": true,
+                    "type": "string"
+                  }
+                ],
+                "type": "object"
+              }
+            ],
+            "type": "object"
+          }
+        ],
+        "type": "object"
+      },
+      {
+        "label": "Request parameters",
+        "name": "request",
+        "properties": [
+          {
+            "control_type": "text",
+            "label": "Session ID",
+            "name": "session_id",
+            "optional": false,
+            "type": "string"
+          }
+        ],
+        "type": "object"
+      }
+    ],
+    "input": {
+      "request": {
+        "content_type": "json",
+        "schema": "[{\"name\":\"session_id\",\"type\":\"string\",\"optional\":false,\"control_type\":\"text\",\"label\":\"Session ID\"}]"
+      },
+      "response": {
+        "content_type": "json",
+        "responses": [
+          {
+            "body_schema": "[{\"control_type\":\"text\",\"label\":\"Session ID\",\"optional\":true,\"type\":\"string\",\"name\":\"session_id\"},{\"label\":\"Steps\",\"optional\":true,\"of\":\"object\",\"properties\":[{\"control_type\":\"text\",\"label\":\"Session ID\",\"optional\":true,\"type\":\"string\",\"name\":\"session_id\"},{\"control_type\":\"text\",\"label\":\"Step ID\",\"optional\":true,\"type\":\"string\",\"name\":\"step_id\"},{\"control_type\":\"text\",\"label\":\"Parent step ID\",\"optional\":true,\"type\":\"string\",\"name\":\"parent_step_id\"},{\"control_type\":\"text\",\"label\":\"Agent name\",\"optional\":true,\"type\":\"string\",\"name\":\"agent_name\"},{\"control_type\":\"text\",\"label\":\"Action\",\"optional\":true,\"type\":\"string\",\"name\":\"action\"},{\"control_type\":\"text\",\"label\":\"Input summary\",\"optional\":true,\"type\":\"string\",\"name\":\"input_summary\"},{\"control_type\":\"text\",\"label\":\"Output summary\",\"optional\":true,\"type\":\"string\",\"name\":\"output_summary\"},{\"control_type\":\"text\",\"label\":\"Status\",\"optional\":true,\"type\":\"string\",\"name\":\"status\"},{\"control_type\":\"text\",\"label\":\"Error message\",\"optional\":true,\"type\":\"string\",\"name\":\"error_message\"},{\"control_type\":\"date_time\",\"label\":\"Started at\",\"render_input\":\"date_time_conversion\",\"parse_output\":\"date_time_conversion\",\"optional\":true,\"type\":\"date_time\",\"name\":\"started_at\"},{\"control_type\":\"date_time\",\"label\":\"Ended at\",\"render_input\":\"date_time_conversion\",\"parse_output\":\"date_time_conversion\",\"optional\":true,\"type\":\"date_time\",\"name\":\"ended_at\"}],\"type\":\"array\",\"name\":\"steps\"}]",
+            "http_status_code": "200",
+            "name": "success"
+          }
+        ]
+      }
+    },
+    "keyword": "trigger",
+    "name": "receive_request",
+    "number": 0,
+    "provider": "workato_api_platform",
+    "toggleCfg": {
+      "response.responses.0.http_status_code": true
+    },
+    "unfinished": false,
+    "uuid": "d871f8a1-cd22-4756-9cd0-b1b0206cd98d"
+  },
+  "concurrency": 1,
+  "config": [
+    {
+      "account_id": null,
+      "keyword": "application",
+      "provider": "workato_api_platform",
+      "skip_validation": false
+    },
+    {
+      "account_id": null,
+      "keyword": "application",
+      "provider": "workato_db_table",
+      "skip_validation": false
+    }
+  ],
+  "description": "",
+  "name": "get_trace",
+  "private": false,
+  "version": 4
+}

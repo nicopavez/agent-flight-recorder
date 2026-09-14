@@ -103,9 +103,24 @@ data.
 
 ## 6. Export and assemble
 
+The `workato` Python CLI (`pip install workato-platform-cli`) is
+deprecated and can't authenticate against a trial-tenant workspace no
+matter what scopes its token has. Use the newer Go-based CLI instead
+([workato-devs/wk](https://github.com/workato-devs/wk)):
+
 ```
-workato pull   # exports the two recipes
+wk auth login --token <token> --environment dev --region trial --no-input
+wk clone "hello-world" --local-path recipe --no-input
 ```
+
+`region trial` (Developer Sandbox) is the key flag the old CLI never
+had — that's what actually lets it authenticate here. The token needs a
+Client Role with, at minimum: Projects & folders, Resources, Recipes,
+**Export manifests** (under Recipe lifecycle management — this is the
+one that's easy to miss and the clone will 401 without it), and
+Workspace details (under Admin — needed for the `/users/me` check
+`wk auth login` does up front). Build these in **Workspace admin → API
+clients → Client roles**.
 
 Copy the exported files into `recipe/`, add your screenshots to
 `docs/screenshots/`, update the checklist in `README.md`, then:

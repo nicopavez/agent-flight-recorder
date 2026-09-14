@@ -4,7 +4,7 @@
 [![Built on Workato](https://img.shields.io/badge/built%20on-Workato%20Enterprise%20MCP-6b46c1)](https://www.workato.com/mcp)
 [![Tests](https://img.shields.io/badge/tests-7%20passing-brightgreen)](tests/test_trace_viewer.py)
 [![License](https://img.shields.io/badge/license-MIT-lightgrey)](LICENSE)
-[![Status](https://img.shields.io/badge/status-v0-orange)](#whats-working-today)
+[![Status](https://img.shields.io/badge/status-v1-brightgreen)](#whats-working-today)
 
 A black-box flight recorder for multi-agent AI systems. When one agent
 hands work to another, this records who did what, when, and whether it
@@ -128,12 +128,12 @@ python trace_viewer.py sample_data/sample_trace.json
 
 ## Roadmap
 
-**v0 (this repo, today)**: trace schema, `trace_viewer.py`, sample data,
-tests. The reading/analysis side, fully working standalone.
+**v0**: trace schema, `trace_viewer.py`, sample data, tests. The
+reading/analysis side, fully working standalone.
 
-**v1**: the recording side live in Workato: Data Table, `record_step` /
-`get_trace` recipes, exposed via Enterprise MCP; fed a real multi-agent
-run instead of fixture data.
+**v1 (this repo, today)**: the recording side live in Workato: Data
+Table, `record_step` / `get_trace` recipes, exposed via Enterprise MCP;
+fed a real multi-agent run instead of fixture data.
 
 **v2**: an optional LLM-narrated summary layered on top of the
 deterministic trace (see "Why rule-based" above); anomaly flagging
@@ -150,7 +150,8 @@ agent-flight-recorder/
 │   └── sample_trace.json    # example run: a step fails, retries, succeeds
 ├── tests/
 │   └── test_trace_viewer.py
-├── recipe/                  # exported Workato recipes (added after building)
+├── recipe/                  # exported Workato project (wk clone), the
+│                             # real record_step/get_trace/data table/MCP defs
 ├── docs/
 │   ├── BUILD_PLAN.md        # step-by-step: Data Table + recipes + MCP exposure
 │   └── screenshots/

@@ -1,0 +1,48 @@
+{
+  "auth_type": "hashed_token",
+  "description": "Call record_step after completing any meaningful action. Call get_trace to review what happened in a past run.",
+  "name": "agent-flight-recorder",
+  "references": {
+    "ref_0": {
+      "id": {
+        "folder": "",
+        "name": "get_trace",
+        "zip_name": "get_trace.recipe.json"
+      },
+      "type": "recipe"
+    },
+    "ref_1": {
+      "id": {
+        "folder": "",
+        "name": "record_step",
+        "zip_name": "record_step.recipe.json"
+      },
+      "type": "recipe"
+    }
+  },
+  "tools": [
+    {
+      "description": "",
+      "destructive": false,
+      "name": "get_trace",
+      "open_world": false,
+      "read_only": false,
+      "safe_to_retry": false,
+      "title": "get_trace",
+      "tool": "ref_0",
+      "vua_required": false
+    },
+    {
+      "description": "",
+      "destructive": false,
+      "name": "record_step",
+      "open_world": false,
+      "read_only": false,
+      "safe_to_retry": false,
+      "title": "record_step",
+      "tool": "ref_1",
+      "vua_required": false
+    }
+  ],
+  "tools_type": "project_assets"
+}

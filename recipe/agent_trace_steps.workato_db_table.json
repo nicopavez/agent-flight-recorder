@@ -1,0 +1,126 @@
+{
+  "name": "agent_trace_steps",
+  "project_name": "hello-world",
+  "schema": [
+    {
+      "hidden": true,
+      "id": "11fbe9a6-a16d-4d7e-86ea-afe42ec03005",
+      "read_only": true,
+      "title": "Record ID",
+      "type": "short-text"
+    },
+    {
+      "hidden": true,
+      "id": "a5612739-5401-4ae7-bd07-782c1a6fb2d1",
+      "read_only": true,
+      "title": "Created time",
+      "type": "date-time"
+    },
+    {
+      "hidden": true,
+      "id": "61aae604-a95e-4519-9091-bb0bf754a67f",
+      "read_only": true,
+      "title": "Last modified time",
+      "type": "date-time"
+    },
+    {
+      "hidden": false,
+      "id": "a05ddce6-ef3a-4947-a9a0-e014653872e0",
+      "metadata": {},
+      "read_only": false,
+      "required": false,
+      "title": "session_id",
+      "type": "short-text"
+    },
+    {
+      "hidden": false,
+      "id": "24f90a9a-e584-4139-ab74-2d3fa484c377",
+      "metadata": {},
+      "read_only": false,
+      "required": false,
+      "title": "step_id",
+      "type": "short-text"
+    },
+    {
+      "hidden": false,
+      "id": "586765a5-e0e1-416a-8688-07e18f3f320f",
+      "metadata": {},
+      "read_only": false,
+      "required": false,
+      "title": "parent_step_id",
+      "type": "short-text"
+    },
+    {
+      "hidden": false,
+      "id": "95b25665-3989-434f-96e7-02df208dfcfb",
+      "metadata": {},
+      "read_only": false,
+      "required": false,
+      "title": "agent_name",
+      "type": "short-text"
+    },
+    {
+      "hidden": false,
+      "id": "0944b07d-194f-41a9-9d93-d7a6b0015ff8",
+      "metadata": {},
+      "read_only": false,
+      "required": false,
+      "title": "action",
+      "type": "short-text"
+    },
+    {
+      "hidden": false,
+      "id": "57207f77-e73d-4e38-ba8e-c6d40922eec6",
+      "metadata": {},
+      "read_only": false,
+      "required": false,
+      "title": "input_summary",
+      "type": "short-text"
+    },
+    {
+      "hidden": false,
+      "id": "92116d4f-6c8a-4e72-8494-cd2a52b5f38d",
+      "metadata": {},
+      "read_only": false,
+      "required": false,
+      "title": "output_summary",
+      "type": "short-text"
+    },
+    {
+      "hidden": false,
+      "id": "4395f0b8-2300-434d-a795-81910debb4b9",
+      "metadata": {},
+      "read_only": false,
+      "required": false,
+      "title": "status",
+      "type": "short-text"
+    },
+    {
+      "hidden": false,
+      "id": "ae58752b-2bef-4ca4-9b0d-d6cbb2bccbf7",
+      "metadata": {},
+      "read_only": false,
+      "required": false,
+      "title": "error_message",
+      "type": "short-text"
+    },
+    {
+      "hidden": false,
+      "id": "7ada7b89-600a-4539-bf76-b987e94b31c2",
+      "metadata": {},
+      "read_only": false,
+      "required": false,
+      "title": "started_at",
+      "type": "short-text"
+    },
+    {
+      "hidden": false,
+      "id": "e826deea-25c8-40d6-a32b-f07e320cd37d",
+      "metadata": {},
+      "read_only": false,
+      "required": false,
+      "title": "ended_at",
+      "type": "short-text"
+    }
+  ]
+}
